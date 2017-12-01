@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "git push origin --delete master && git branch -D master && git checkout --orphan master && rm -rf * && git checkout dev && git reset --hard HEAD && echo \"nodebotani.st\" > CNAME && git subtree push --prefix out origin master && rm CNAME && git fetch origin master && git checkout master && git checkout dev"
+    "deploy": "git push origin --delete master && git branch -D master && git checkout --orphan master && rm -rf * && git checkout dev && git reset --hard HEAD && echo \"nodebotani.st\" > CNAME && git add CNAME && git commit -m \"Add CNAME\" && git subtree push --prefix out origin master && rm CNAME && git fetch origin master && git checkout master && git checkout dev"
   },
   "repository": {
     "type": "git",
