@@ -1,1 +1,1 @@
-export default () => <div>Welcome to nodebotani.st!</div>
+export default () => <div>Welcome to nodebotani.st! Test</div>
