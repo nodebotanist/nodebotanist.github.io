@@ -3,6 +3,7 @@ import Head from 'next/head'
 export default () => (
   <div className="container">
     <Head>
+      <script src="https://use.fontawesome.com/de34fc0dd0.js"></script>
       <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet" />
       <link rel="stylesheet" href="/static/css/styles.css" />
@@ -38,10 +39,16 @@ export default () => (
       <footer id="footer" className="col-lg-12 nav-container">
         <ul className="list-unstyled list-inline">
           <li>
-            <a href="https://twitter.com/nodebotanist">Twitter</a>
+            <a href="https://twitter.com/nodebotanist">
+              <span className="sr-only">Twitter</span>
+              <i className="fa fa-twitter fa-lg"></i>
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/nodebotanist">Twitter</a>
+            <a href="https://twitch.tv/nodebotanist">
+              <span className="sr-only">Twitch</span>
+              <i className="fa fa-twitch fa-large"></i>
+            </a>
           </li>
         </ul>
       </footer>
