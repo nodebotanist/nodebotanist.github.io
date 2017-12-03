@@ -5,7 +5,7 @@ export default () => (
     <Head>
       <script src="https://use.fontawesome.com/de34fc0dd0.js"></script>
       <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet" />
       <link rel="stylesheet" href="/static/css/styles.css" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <title>My page title</title>
@@ -34,6 +34,7 @@ export default () => (
     <div className="container">
       <h1>"The Nodebotanist"</h1>
       <h4 className="text-success">(a.k.a. Mx. Kas Perch)</h4>
+      <p>Hi! You've reached my portfolio.</p>
     </div>
     <div className="row">
       <footer id="footer" className="col-lg-12 nav-container">
