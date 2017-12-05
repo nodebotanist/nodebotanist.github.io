@@ -3,9 +3,8 @@ import Head from 'next/head'
 export default () => (
   <div className="container">
     <Head>
-      <script src="https://use.fontawesome.com/de34fc0dd0.js"></script>
+      <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
       <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-      <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet" />
       <link rel="stylesheet" href="/static/css/styles.css" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <title>Nodebotani.st</title>
