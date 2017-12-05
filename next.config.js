@@ -3,7 +3,11 @@ module.exports = {
   distDir: 'build',
   exportPathMap: function () {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/about': {page: 'about'},
+      '/bibliography': {page: 'bibliography'},
+      '/bragging': {page: 'bragging'},
+      '/projects': {page: 'projects'}
     }
   }
 }
