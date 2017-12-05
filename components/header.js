@@ -12,21 +12,21 @@ export default () => (
     </Head>
     <nav className="row">
       <div className="col-md-4 nav-container">
-        <a className="nav-brand" href="index">nodebotani.st</a>
+        <a className="nav-brand" href="/index">nodebotani.st</a>
       </div>
       <div className="col-md-8 nav-container">
         <ul className="list-unstyled list-inline pull-right">
           <li>
-            <a className="nav-link" href="about">About</a>
+            <a className="nav-link" href="/about">About</a>
           </li>
           <li>
-            <a className="nav-link" href="projects">Dev Projects</a>
+            <a className="nav-link" href="/projects">Dev Projects</a>
           </li>
           <li>
-            <a className="nav-link" href="bibliography">Bibliography</a>
+            <a className="nav-link" href="/bibliography">Bibliography</a>
           </li>
           <li>
-            <a className="nav-link" href="bragging">Resume</a>
+            <a className="nav-link" href="/bragging">Resume</a>
           </li>
         </ul>
       </div>
