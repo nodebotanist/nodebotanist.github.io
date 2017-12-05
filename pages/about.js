@@ -5,8 +5,8 @@ export default () => (
   <div>
     <Header />
     <div className="container">
-      <h1>Projects Page</h1>
-      <p>I do a lot of random crap, and I put my favorites here</p>
+      <h1>About Me</h1>
+
     </div>
     <Footer />
   </div>
