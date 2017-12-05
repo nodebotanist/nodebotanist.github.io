@@ -10,7 +10,7 @@ export default () => (
       <h2 className="text-primary">Books</h2>
       <p>
         I am one of the contributing authors of <a href="http://shop.oreilly.com/product/0636920031390.do">Make: Javacript Robotics</a>,
-        <span className="text-sucess"> ISBN: 1457186950</span>
+        <span className="text-success"> ISBN: 1457186950</span>
       </p>
       <p>
         I am the author of <a href="https://www.amazon.com/Learning-JavaScript-Robotics-Kassandra-Perch/dp/1785883348">Learning Javascript Robotics</a>,
