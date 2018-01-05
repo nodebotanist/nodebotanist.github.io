@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 export default () => (
-  <div className="container">
+  <header className="container">
     <Head>
       <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
       <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
@@ -30,5 +30,5 @@ export default () => (
         </ul>
       </div>
     </nav>
-  </div>
+  </header>
 )
