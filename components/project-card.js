@@ -6,11 +6,27 @@ class ProjectCard extends React.Component {
       'hardware': 'warning'
     }
 
+    this.linkMap = {
+      github: 'github-alt',
+      gitbook: 'book'
+    }
+
     this.state = {
-      bootstrapClass: this.classMap[props.projectType] || 'primary'
+      projectType: props.projectType,
+      bootstrapClass: this.classMap[props.projectType] || 'primary',
+      skills: props.projectSkills,
+      links: props.links
     }
   }
   render(){
+    const skillsList = this.state.skills.map((skill) => {
+      return <span className={`label label-${this.classMap[skill.type]}`}>{skill.name}</span>
+    })
+
+    const linksList = this.state.links.map((link) => {
+      return <a target="_blank" href={link.link}><i className={`fa fa-${this.linkMap[link.type]} fa-lg link-${link.type}`}/></a>
+    })
+
     return (
       <div className="col-lg-4">
         <div className={`panel panel-${this.state.bootstrapClass}`}>
@@ -19,10 +35,10 @@ class ProjectCard extends React.Component {
           </div>
           <div className="panel-body">
             <p>{this.props.projectDesc}</p>
-            <p>(tags placeholder)</p>
+            <p>{skillsList}</p>
           </div>
           <div className="panel-footer">
-            <p>(links placeholder)</p>
+            <p>{linksList}</p>
           </div>
         </div>
       </div>

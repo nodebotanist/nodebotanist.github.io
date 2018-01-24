@@ -23,6 +23,9 @@ export default () => (
             { name: 'node-serialport', type: 'hardware' }, 
             { name: 'Bus Pirate', type: 'hardware' } 
           ]}
+          links = {[
+            {type: 'github', 'link': 'https://github.com/nodebotanist/node-bus-pirate'}
+          ]}
         />
         <div className="col-lg-4">
           <div className="panel panel-warning">
