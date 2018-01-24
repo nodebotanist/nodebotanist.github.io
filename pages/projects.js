@@ -27,7 +27,7 @@ export default () => (
               </p>
             </div>
             <div className="panel-footer">
-              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate"><i class="text-success fa fa-github-alt fa-lg"></i></a>
+              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate"><i className="text-success fa fa-github-alt fa-lg"></i></a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default () => (
               </p>
             </div>
             <div className="panel-footer">
-              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate-tester"><i class="text-success fa fa-github-alt fa-lg"></i></a>
+              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate-tester"><i className="text-success fa fa-github-alt fa-lg"></i></a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default () => (
               </p>
             </div>
             <div className="panel-footer">
-              <a target="_blank" href="https://www.gitbook.com/book/nodebotanist/nodebotanist-handbook/details"><i class="text-primary fa fa-book fa-lg"></i></a>
+              <a target="_blank" href="https://www.gitbook.com/book/nodebotanist/nodebotanist-handbook/details"><i className="text-primary fa fa-book fa-lg"></i></a>
             </div>
           </div>
         </div>
