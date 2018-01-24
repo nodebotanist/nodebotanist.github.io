@@ -2,14 +2,12 @@ class ProjectCard extends React.Component {
   constructor(props){
     super(props)
 
-    let bootstrapClass = 'primary'
-
-    if(props.projectType == 'hardware'){
-      bootstrapClass = 'warning'
+    this.classMap = {
+      'hardware': 'warning'
     }
 
     this.state = {
-      bootstrapClass
+      bootstrapClass: this.classMap[props.projectType] || 'primary'
     }
   }
   render(){
