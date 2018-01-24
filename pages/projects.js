@@ -1,5 +1,6 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
+import ProjectCard from '../components/project-card'
 
 export default () => (
   <div>
@@ -14,13 +15,19 @@ export default () => (
         <li className="text-info">Writing Project</li>
       </ul>
       <div className="row">
+        <ProjectCard
+          projectName="Node-BusPirate"
+          projectType="hardware"
+          projectDesc="This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress."
+          projectSkills={['node-serialport', 'Bus Pirate']}
+        />
         <div className="col-lg-4">
           <div className="panel panel-warning">
             <div className="panel-heading">
               <h3 className="panel-title">Node Bus-Pirate</h3>
             </div>
             <div className="panel-body">
-              <p>This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress.</p>
+              <p></p>
               <p>
                 <span className="label label-warning">node-serialport</span>
                 <span className="label label-warning">Bus Pirate</span>
