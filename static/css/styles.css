@@ -47,6 +47,10 @@ footer p {
   color: #77b300;
 }
 
+.project-link-gitbook {
+  color: #9933cc;
+}
+
 .project-skill-label {
   margin-right: 0.5rem;
   font-size: 1em;
