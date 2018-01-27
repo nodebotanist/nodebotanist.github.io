@@ -27,56 +27,29 @@ export default () => (
             {type: 'github', 'link': 'https://github.com/nodebotanist/node-bus-pirate'}
           ]}
         />
-        <div className="col-lg-4">
-          <div className="panel panel-warning">
-            <div className="panel-heading">
-              <h3 className="panel-title">Node Bus-Pirate</h3>
-            </div>
-            <div className="panel-body">
-              <p></p>
-              <p>
-                <span className="label label-warning">node-serialport</span>
-                <span className="label label-warning">Bus Pirate</span>
-              </p>
-            </div>
-            <div className="panel-footer">
-              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate"><i className="text-success fa fa-github-alt fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="panel panel-warning">
-            <div className="panel-heading">
-              <h3 className="panel-title">Bus-Pirate Tester</h3>
-            </div>
-            <div className="panel-body">
-              <p>This is an AVR Firmware project I'm writing so I can run hardware tests on the Bus Pirate for the bus-pirate node module</p>
-              <p>
-                <span className="label label-warning">AVR C++</span>
-                <span className="label label-warning">Bus Pirate</span>
-              </p>
-            </div>
-            <div className="panel-footer">
-              <a target="_blank" href="https://github.com/nodebotanist/node-bus-pirate-tester"><i className="text-success fa fa-github-alt fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="panel panel-info">
-            <div className="panel-heading">
-              <h3 className="panel-title">The Nodebotanist's Handbook</h3>
-            </div>
-            <div className="panel-body">
-              <p>Just pulling together advice and such based on my myriad of experience, hoping maybe someone will learn from my mistakes.</p>
-              <p>
-                <span className="label label-info">book</span>
-              </p>
-            </div>
-            <div className="panel-footer">
-              <a target="_blank" href="https://www.gitbook.com/book/nodebotanist/nodebotanist-handbook/details"><i className="text-primary fa fa-book fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          projectName="Bus-Pirate Tester"
+          projectType="hardware"
+          projectDesc="This is an AVR Firmware project I'm writing so I can run hardware tests on the Bus Pirate for the bus-pirate node module"
+          projectSkills= {[
+            { name: 'AVR C', type: 'hardware' },
+            { name: 'Bus Pirate', type: 'hardware' }
+          ]}
+          links= {[
+            { type: 'github', 'link': 'https://github.com/nodebotanist/node-bus-pirate-tester' }
+          ]}
+        />
+        <ProjectCard
+          projectName="The Nodebotanist's Handbook"
+          projectType="writing"
+          projectDesc="Just pulling together advice and such based on my myriad of experience, hoping maybe someone will learn from my mistakes."
+          projectSkills={[
+            { name: 'Documentation', type: 'writing' }
+          ]}
+          links={[
+            { type: 'gitbook', link: 'https://www.gitbook.com/book/nodebotanist/nodebotanist-handbook/details' }
+          ]}
+        />
       </div>
     </div>
     <Footer />
