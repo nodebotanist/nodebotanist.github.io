@@ -42,3 +42,13 @@ a:hover {
 footer p {
   margin-left: 1em;
 }
+
+.project-link-github {
+  color: #77b300;
+}
+
+.project-skill-label {
+  margin-right: 0.5rem;
+  font-size: 1em;
+  color: #000
+}

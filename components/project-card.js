@@ -12,6 +12,7 @@ class ProjectCard extends React.Component {
     }
 
     this.state = {
+      test: true,
       projectType: props.projectType,
       bootstrapClass: this.classMap[props.projectType] || 'primary',
       skills: props.projectSkills,
@@ -20,11 +21,11 @@ class ProjectCard extends React.Component {
   }
   render () {
     const skillsList = this.state.skills.map((skill) => {
-      return <span className={`label label-${this.classMap[skill.type]}`}>{skill.name}</span>
+      return <span className={`project-skill-label label label-${this.classMap[skill.type]}`}>{skill.name}</span>
     })
 
     const linksList = this.state.links.map((link) => {
-      return <a target="_blank" href={link.link}><i className={`fa fa-${this.linkMap[link.type]} fa-lg relink-${link.type}`}/></a>
+      return <a target="_blank" href={link.link}><i className={`fa fa-${this.linkMap[link.type]} fa-lg project-link-${link.type}`}/></a>
     })
 
     return (
@@ -35,6 +36,7 @@ class ProjectCard extends React.Component {
           </div>
           <div className="panel-body">
             <p>{this.props.projectDesc}</p>
+            <p>Skills Used:</p>
             <p>{skillsList}</p>
           </div>
           <div className="panel-footer">

@@ -20,8 +20,8 @@ export default () => (
           projectType="hardware"
           projectDesc="This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress."
           projectSkills={[
-            { name: 'node-serialport', type: 'hardware' }, 
-            { name: 'Bus Pirate', type: 'hardware' } 
+            { name: 'node-serialport', type: 'hardware' },
+            { name: 'Bus Pirate', type: 'hardware' }
           ]}
           links = {[
             {type: 'github', 'link': 'https://github.com/nodebotanist/node-bus-pirate'}
