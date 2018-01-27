@@ -1,5 +1,5 @@
 class ProjectCard extends React.Component {
-  constructor(props){
+  constructor (props) {
     super(props)
 
     this.classMap = {
@@ -18,13 +18,13 @@ class ProjectCard extends React.Component {
       links: props.links
     }
   }
-  render(){
+  render () {
     const skillsList = this.state.skills.map((skill) => {
       return <span className={`label label-${this.classMap[skill.type]}`}>{skill.name}</span>
     })
 
     const linksList = this.state.links.map((link) => {
-      return <a target="_blank" href={link.link}><i className={`fa fa-${this.linkMap[link.type]} fa-lg link-${link.type}`}/></a>
+      return <a target="_blank" href={link.link}><i className={`fa fa-${this.linkMap[link.type]} fa-lg relink-${link.type}`}/></a>
     })
 
     return (
