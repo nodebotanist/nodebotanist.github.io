@@ -3,7 +3,8 @@ class ProjectCard extends React.Component {
     super(props)
 
     this.classMap = {
-      'hardware': 'warning'
+      'hardware': 'warning',
+      'writing': 'info'
     }
 
     this.linkMap = {
