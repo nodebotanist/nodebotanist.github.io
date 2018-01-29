@@ -16,7 +16,44 @@ export default () => (
       </ul>
       <div className="row">
         <ProjectCard
-          name="Node-BusPirate"
+          name="Portfolio"
+          type="web"
+          desc="You're looking at it. I wanted to learn Next.js and React 16. Used Bootstrap for ease."
+          skills={[
+            { name: 'React', type: 'web' },
+            { name: 'Next.js', type: 'web' },
+            { name: 'Bootstrap', type: 'web' }
+          ]}
+          links={[
+            { type: 'github', link: 'https://github.com/nodebotanist/nodebotanist.github.io' }
+          ]}
+        />
+        <ProjectCard
+          name="The Golden Raider"
+          type="hardware"
+          desc="I overhauled a model of an Imperial Raider and put a Raspeberry Pi Zero W, some RGB LEDs, and a speaker in there. It plays music and lights up!"
+          skills={[
+            { name: 'Python', type: 'language' },
+            { name: 'Raspberry Pi', type: 'hardware' },
+          ]}
+          links={[
+            { type: 'github', link: 'https://github.com/atx-sabine/Golden-Raider-2017' }
+          ]}
+        />
+        <ProjectCard
+          name="SX1509-python-raspi"
+          type="hardware"
+          desc="I wrote a Python library for the SX1509 to go in the Golden Raider-- PWM and digital output works"
+          skills={[
+            { name: 'Python', type: 'language' },
+            { name: 'Raspberry Pi', type: 'hardware' }
+          ]}
+          links={[
+            { type: 'github', link: 'https://github.com/ATX-Sabine/SX1509-WiringPi-Python' }
+          ]}
+        />
+        <ProjectCard
+          name="Node-Bus-Pirate"
           type="hardware"
           desc="This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress."
           skills={[
