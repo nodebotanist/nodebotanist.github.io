@@ -52,6 +52,8 @@ export default () => (
             { type: 'github', link: 'https://github.com/ATX-Sabine/SX1509-WiringPi-Python' }
           ]}
         />
+      </div>
+      <div className="row">
         <ProjectCard
           name="Node-Bus-Pirate"
           type="hardware"
