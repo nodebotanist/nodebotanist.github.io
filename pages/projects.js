@@ -16,10 +16,10 @@ export default () => (
       </ul>
       <div className="row">
         <ProjectCard
-          projectName="Node-BusPirate"
-          projectType="hardware"
-          projectDesc="This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress."
-          projectSkills={[
+          name="Node-BusPirate"
+          type="hardware"
+          desc="This library was built to control the Bus Pirate with Node.js. Right now it has I2C and UART Functionality. Working on a tester before making progress."
+          skills={[
             { name: 'node-serialport', type: 'hardware' },
             { name: 'Bus Pirate', type: 'hardware' }
           ]}
@@ -28,10 +28,10 @@ export default () => (
           ]}
         />
         <ProjectCard
-          projectName="Bus-Pirate Tester"
-          projectType="hardware"
-          projectDesc="This is an AVR Firmware project I'm writing so I can run hardware tests on the Bus Pirate for the bus-pirate node module"
-          projectSkills= {[
+          name="Bus-Pirate Tester"
+          type="hardware"
+          desc="This is an AVR Firmware project I'm writing so I can run hardware tests on the Bus Pirate for the bus-pirate node module"
+          skills= {[
             { name: 'AVR C', type: 'hardware' },
             { name: 'Bus Pirate', type: 'hardware' }
           ]}
@@ -40,10 +40,10 @@ export default () => (
           ]}
         />
         <ProjectCard
-          projectName="The Nodebotanist's Handbook"
-          projectType="writing"
-          projectDesc="Just pulling together advice and such based on my myriad of experience, hoping maybe someone will learn from my mistakes."
-          projectSkills={[
+          name="The Nodebotanist's Handbook"
+          type="writing"
+          desc="Just pulling together advice and such based on my myriad of experience, hoping maybe someone will learn from my mistakes."
+          skills={[
             { name: 'Documentation', type: 'writing' }
           ]}
           links={[

@@ -14,9 +14,9 @@ class ProjectCard extends React.Component {
 
     this.state = {
       test: true,
-      projectType: props.projectType,
-      bootstrapClass: this.classMap[props.projectType] || 'primary',
-      skills: props.projectSkills,
+      projectType: props.type,
+      bootstrapClass: this.classMap[props.type] || 'primary',
+      skills: props.skills,
       links: props.links
     }
   }
@@ -33,10 +33,10 @@ class ProjectCard extends React.Component {
       <div className="col-lg-4">
         <div className={`panel panel-${this.state.bootstrapClass}`}>
           <div className="panel-heading">
-            <h3 className="panel-title">{this.props.projectName}</h3>
+            <h3 className="panel-title">{this.props.name}</h3>
           </div>
           <div className="panel-body">
-            <p>{this.props.projectDesc}</p>
+            <p>{this.props.desc}</p>
             <p>Skills Used:</p>
             <p>{skillsList}</p>
           </div>
