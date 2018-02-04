@@ -7,7 +7,7 @@ export default () => (
     <div className="container">
       <h1>"The Nodebotanist"</h1>
       <h4 className="text-success">(a.k.a. Mx. Kas Perch)</h4>
-      <p>Hi! You've reached my portfolio.</p>
+      <p>Hi! You've reached my portfolio. The other links up top show more.</p>
     </div>
     <Footer />
   </div>
