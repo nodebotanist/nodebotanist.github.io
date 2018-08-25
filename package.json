@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
-    "next": "^4.2.3",
+    "next": "^6.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
