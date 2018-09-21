@@ -14,7 +14,7 @@ export default withRouter((props) => (
         let params = new URLSearchParams(document.location.search.substring(1));
         let color = params.get("color");
             var oReq = new XMLHttpRequest();
-            oReq.open("GET", "https://frbo73bbwg.execute-api.us-east-1.amazonaws.com/default/aws-nodejs-dev-empire2018?color=${color}");
+            oReq.open("GET", \`https://frbo73bbwg.execute-api.us-east-1.amazonaws.com/default/aws-nodejs-dev-empire2018?color=\${color}\`);
             oReq.send();`}}>
         </script>
     </div>
