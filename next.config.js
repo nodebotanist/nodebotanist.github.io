@@ -7,7 +7,8 @@ module.exports = {
       '/about': {page: '/about'},
       '/bibliography': {page: '/bibliography'},
       '/bragging': {page: '/bragging'},
-      '/projects': {page: '/projects'}
+      '/projects': {page: '/projects'},
+      '/set': {page: '/set'}
     }
   }
 }
