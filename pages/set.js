@@ -14,7 +14,7 @@ export default withRouter((props) => (
         let params = new URLSearchParams(document.location.search.substring(1));
         let color = params.get("color");
             var oReq = new XMLHttpRequest();
-            oReq.open("GET", \`https://nodeconfeu18.azurewebsites.net/api/hello?color=\${color}\`);
+            oReq.open("GET", \`https://badge-demo.azurewebsites.net/api/changeColor?color=\${color}\`);
             oReq.send();`}}>
         </script>
     </div>
