@@ -1,19 +1,17 @@
 {
   "name": "nodebotanist.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "npm i && next build && next export && git add --all && git commit -m \"Build\" && git push origin dev",
-    "start": "next start",
-    "deploy": "git push origin --delete master && git branch -D master && git checkout --orphan master && rm -rf * && git checkout dev && git reset --hard HEAD && echo \"nodebotani.st\" > out/CNAME && git add out/CNAME && git commit -m \"Add CNAME\" && git subtree push --prefix out origin master && rm out/CNAME && git fetch origin master && git checkout master && git checkout dev && git reset --hard origin/dev && npm i"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./build.sh",
+    "publish": "./publish.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodebotanist/nodebotanist.github.io.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,15 +19,6 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
-    "next": "^7.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
-  },
-  "devDependencies": {
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "bashme": "^0.3.4"
   }
 }
