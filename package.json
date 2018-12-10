@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
-    "bashme": "^0.3.4"
+    "xterm": "^3.9.0"
   }
 }
