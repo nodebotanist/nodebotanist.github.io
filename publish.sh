@@ -6,6 +6,8 @@
  rm -rf * && 
  git checkout dev && 
  git reset --hard HEAD && 
+ npm i && 
+ npm run build && 
  echo \"nodebotani.st\" > dist/CNAME && 
  git add out/CNAME && 
  git commit -m \"Add CNAME\" && 
