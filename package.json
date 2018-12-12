@@ -2,7 +2,7 @@
   "name": "nodebotanist.github.io",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./build.sh",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
     "xterm": "^3.9.0",
     "xterm-webfont": "^1.1.1"
   }
