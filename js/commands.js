@@ -18,7 +18,9 @@
     }
 
     if (commandList.indexOf(command) === -1) {
-      term.write('\r\nCommand not found!')
+      term.setColor('blue')
+      term.write('Command not found!')
+      term.setColor('reset')
     } else {
       commands[command].apply(this, arguments)
     }
