@@ -42,6 +42,8 @@
   }))
 
   term.on('linefeed', (...args) => {
-    console.log(args)
+    runCommand(currentLine.split(' '))
+    currentLine =  ''
+    currentLineLength = 0
   })
 })()
