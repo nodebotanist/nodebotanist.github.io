@@ -6,6 +6,7 @@
   Terminal.applyAddon(fit)
 
   let term = new Terminal({})
+  window.term = term
 
   term.open(document.getElementById('#terminal'))
 
@@ -20,6 +21,10 @@
     const printable = !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey;
 
     if (ev.keyCode === 13) {
+      term.write('\r\n')
+      runCommand(currentLine.split(' '))
+      currentLine =  ''
+      currentLineLength = 0
       term.prompt()
     } else if (ev.keyCode === 8) {
       // Do not delete the prompt
@@ -33,8 +38,6 @@
       term.write(key)
       currentLineLength++
     }
-
-    console.log('Line: ', currentLine, 'Length: ', currentLineLength)
   }))
 
   term._core.register(term.addDisposableListener('paste', (data, ev) => {
@@ -42,8 +45,6 @@
   }))
 
   term.on('linefeed', (...args) => {
-    runCommand(currentLine.split(' '))
-    currentLine =  ''
-    currentLineLength = 0
+
   })
 })()
