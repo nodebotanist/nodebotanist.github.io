@@ -4,9 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./build.sh",
-    "publish": "./publish.sh"
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -18,13 +16,12 @@
     "url": "https://github.com/nodebotanist/nodebotanist.github.io/issues"
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
-  "scripts": {
-    "build": "npx webpack"
-  },
   "dependencies": {
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
     "xterm": "^3.9.0",
     "xterm-webfont": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
   }
 }
