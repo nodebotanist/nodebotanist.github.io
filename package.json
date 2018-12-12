@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
-    "xterm": "^3.9.0"
+    "xterm": "^3.9.0",
+    "xterm-webfont": "^1.1.1"
   }
 }

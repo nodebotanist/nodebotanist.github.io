@@ -29,7 +29,8 @@
   theme.foreground = theme.brightWhite
 
   let terminalOptions = {
-    theme
+    theme,
+    fontFamily: "'VT323', monospace"
   }
 
   let term = new Terminal(terminalOptions)
