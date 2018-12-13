@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "npx webpack"
+    "build": "npx webpack && cp index.html ./dist",
+    "start": "npx webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "xterm-webfont": "^1.1.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
