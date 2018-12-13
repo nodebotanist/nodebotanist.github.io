@@ -52,7 +52,7 @@ const formattingCodes = {
 } 
 
 let createEscapeCode = (format) => {
-  return `\e[$(format)m`
+  return `\u001b[${formattingCodes[format]};1m`
 }
 
 let format = (format) => {
