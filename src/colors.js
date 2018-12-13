@@ -15,4 +15,7 @@ module.exports = {
   brightRed: '#ff776d',
   yellow: '#ee8826',
   brightyellow: '#f3ca20',
+  background: '#292957',
+  foreground: '#fae2cc',
+  cursor: '#f3c947'
 }
