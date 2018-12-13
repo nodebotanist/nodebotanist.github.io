@@ -1,16 +1,9 @@
 const format = require('./formatting')
-
-let help = (...args) => {
-  return `HELP`
-}
-
-commands = {
-  help
-}
+const commands = require('./commands/map.js')
 
 function runCommand(args) {
   let command = args[0] 
-  let arguments = undefined
+  let arguments = []
   let commandList = Object.keys(commands)
 
   if (args.length > 1) {
@@ -20,6 +13,7 @@ function runCommand(args) {
   if (commandList.indexOf(command) === -1) {
     return `${format('blueText')}Command ${command} not found!${format('resetAll')}`
   } else {
+    arguments.push(commandList)
     return commands[command].apply(this, arguments)
   }
 }
