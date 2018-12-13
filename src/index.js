@@ -1,9 +1,9 @@
-import { Terminal } from 'xterm'
-import * as fit from 'xterm/lib/addons/fit/fit'
-import * as WebfontLoader from 'xterm-webfont'
+const Terminal = require('xterm').Terminal
+const fit = require('xterm/lib/addons/fit/fit')
+const WebfontLoader = require('xterm-webfont')
 
-import { runCommand } from './commands'
-import * as theme from './theme'
+const commands = require('./commands')
+const theme = require('./theme')
 
 let currentLine = ''
 let currentLineLength = 0
@@ -32,7 +32,7 @@ term._core.register(term.addDisposableListener('key', (key, ev) => {
 
   if (ev.keyCode === 13) {
     term.write('\r\n')
-    runCommand(currentLine.split(' '))
+    commands.runCommand(currentLine.split(' '))
     currentLine =  ''
     currentLineLength = 0
     term.prompt()
