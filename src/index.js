@@ -14,7 +14,7 @@ Terminal.applyAddon(WebfontLoader)
 
 let terminalOptions = {
   theme,
-  fontFamily: "VT323"
+  fontFamily: "Share Tech Mono"
 }
 
 let term = new Terminal(terminalOptions)
