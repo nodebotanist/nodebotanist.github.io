@@ -14,9 +14,9 @@ module.exports = {
     filename: "main.js", // string
   },
   devServer: {
-    after: (app, server) => {
-      fs.copyFileSync(path.resolve(__dirname, 'index.html'), 
-        path.resolve(__dirname, 'dist'))
-    }
+    // after: (app, server) => {
+    //   fs.copyFileSync(path.resolve(__dirname, 'index.html'), 
+    //     path.resolve(__dirname, 'dist'))
+    // }
   }
 }

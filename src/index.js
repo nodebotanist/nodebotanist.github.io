@@ -1,36 +1,15 @@
 import { Terminal } from 'xterm'
 import * as fit from 'xterm/lib/addons/fit/fit'
 import * as WebfontLoader from 'xterm-webfont'
+
 import { runCommand } from './commands'
+import * as theme from './theme'
 
 let currentLine = ''
 let currentLineLength = 0
 
 Terminal.applyAddon(fit)
 Terminal.applyAddon(WebfontLoader)
-
-let theme = {
-  blue: '#1d5b91',
-  brightBlue: '#519ABA',
-  black: '#09B0D',
-  brightBlack: '#0D1112',
-  cyan: '#293c44',
-  brightCyan: '#7494a3',
-  green: '#436b24',
-  brightGreen: '#8dc149',
-  magenta: '#4f397c',
-  brightMagenta: '#a074c4',
-  red: '#7c1c20',
-  brightRed: '#cc3e44',
-  white: '#6d8086',
-  brightWhite: '#D4D7D6',
-  yellow: '#a2852f',
-  brightYellow: '#cbcb41'
-}
-
-//set color aliases
-theme.background = theme.black
-theme.foreground = theme.brightWhite
 
 let terminalOptions = {
   theme,
