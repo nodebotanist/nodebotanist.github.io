@@ -29,7 +29,20 @@ term.prompt = () => {
 
 // Intro time!
 term.write(`
-Welcome to ${format('lightGreenText')}nodebotani.st!${format('resetAll')}
+${format('cyanText')}
+     *     \r
+     |     \r
+***********\r
+**       **\r
+**  ^ ^  **\r
+**   o   **\r
+**       **\r
+***********\r\n
+${format('resetAll')}
+Welcome to ${format('brightGreenText')}https://nodebotani.st!${format('resetAll')}\r\n
+This is my personal portfolio site, as well as a terminal you can\r
+${format('magentaText')}control some of my robotics projects${format('resetAll')} from!\r\n
+Use the ${format('brightMagentaText')}'help'${format('resetAll')} command to see all available commands\r
 `)
 
 term.prompt()
