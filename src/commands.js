@@ -1,9 +1,11 @@
-let printHelp = (...args) => {
-  term.write('HELP')
+const format = require('./formatting')
+
+let help = (...args) => {
+  return `HELP`
 }
 
 commands = {
-  'help': printHelp
+  help
 }
 
 function runCommand(args) {
@@ -16,11 +18,9 @@ function runCommand(args) {
   }
 
   if (commandList.indexOf(command) === -1) {
-    term.setColor('blue')
-    term.write('Command not found!')
-    term.setColor('reset')
+    return `${format('blueText')}Command ${command} not found!${format('resetAll')}`
   } else {
-    commands[command].apply(this, arguments)
+    return commands[command].apply(this, arguments)
   }
 }
 
