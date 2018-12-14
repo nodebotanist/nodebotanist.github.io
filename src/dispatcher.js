@@ -13,7 +13,6 @@ function run(args) {
   if (commandList.indexOf(command) === -1) {
     return `${format('blueText')}Command ${command} not found!${format('resetAll')}`
   } else {
-    console.log(commands)
     arguments.push(commandList)
     return commands[command].run.apply(this, arguments)
   }
