@@ -28,22 +28,7 @@ term.prompt = () => {
 //term.fit()
 
 // Intro time!
-term.write(`
-${format.addEscapeCharacter('cyanText')}
-     *     ${format.newLine()}
-     |     ${format.newLine()}
-***********${format.newLine()}
-**       **${format.newLine()}
-**  ^ ^  **${format.newLine()}
-**   o   **${format.newLine()}
-**       **${format.newLine()}
-***********${format.newLine()}
-${format.addEscapeCharacter('resetAll')}
-Welcome to ${format.addEscapeCharacter('brightGreenText')}https://nodebotani.st!${format.addEscapeCharacter('resetAll')}${format.newLine()}
-This is my personal portfolio site, as well as a terminal you can${format.newLine()}
-${format.addEscapeCharacter('magentaText')}control some of my robotics projects${format.addEscapeCharacter('resetAll')} from!${format.newLine()}
-Use the ${format.addEscapeCharacter('brightMagentaText')}'help'${format.addEscapeCharacter('resetAll')} command to see all available commands${format.newLine()}
-`)
+term.write(`${format.addEscapeCharacter('cyanText')}     *     ${format.newLine()}     |     ${format.newLine()}***********${format.newLine()}**       **${format.newLine()}**  ^ ^  **${format.newLine()}**   o   **${format.newLine()}**       **${format.newLine()}***********${format.newLine()}${format.addEscapeCharacter('resetAll')}Welcome to ${format.addEscapeCharacter('brightGreenText')}https://nodebotani.st!${format.addEscapeCharacter('resetAll')}${format.newLine()}This is my personal portfolio site, as well as a terminal you can${format.newLine()}${format.addEscapeCharacter('magentaText')}control some of my robotics projects${format.addEscapeCharacter('resetAll')} from!${format.newLine()}Use the ${format.addEscapeCharacter('brightMagentaText')}'help'${format.addEscapeCharacter('resetAll')} command to see all available commands${format.newLine()} `)
 
 term.prompt()
 // end Intro
