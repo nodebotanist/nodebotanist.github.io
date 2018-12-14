@@ -15,7 +15,7 @@ function run(args) {
   } else {
     console.log(commands)
     arguments.push(commandList)
-    return commands[command].apply(this, arguments)
+    return commands[command].run.apply(this, arguments)
   }
 }
 
