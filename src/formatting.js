@@ -55,8 +55,15 @@ let createEscapeCode = (format) => {
   return `\u001b[${formattingCodes[format]};1m`
 }
 
-let format = (format) => {
+let addEscapeCharacter = (format) => {
   return createEscapeCode(format)
 }
 
-module.exports = format
+let newLine = () => { // thanks viewer tbodt for this idea!
+  return '\r\n'
+}
+
+module.exports = {
+  addEscapeCharacter,
+  newLine
+}

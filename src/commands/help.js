@@ -1,11 +1,10 @@
-const formatting = require('../formatting')
+const format = require('../formatting')
 
 let helpCommand = (...args) => {
   // TODO: Add help for each command if command is passed
   let commandList = args[args.length-1]
 
-  return `\r\nThe available commands are:\r\n
-${commandList.map(command => `\b\t${command}\n\r`).join('')}`
+  return `${format.newLine()}The available commands are:${format.newLine()}${commandList.map(command => `\b\t${command}${format.newLine()}`).join('')}`
 }
 
 module.exports = helpCommand

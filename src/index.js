@@ -22,27 +22,27 @@ window.term = term // DEBUG
 term.loadWebfontAndOpen(document.getElementById('#terminal'))
 
 term.prompt = () => {
-  term.write('\r\n$ ')
+  term.write(`${format.newLine()}$ `)
 }
 
 //term.fit()
 
 // Intro time!
 term.write(`
-${format('cyanText')}
-     *     \r
-     |     \r
-***********\r
-**       **\r
-**  ^ ^  **\r
-**   o   **\r
-**       **\r
-***********\r\n
-${format('resetAll')}
-Welcome to ${format('brightGreenText')}https://nodebotani.st!${format('resetAll')}\r\n
-This is my personal portfolio site, as well as a terminal you can\r
-${format('magentaText')}control some of my robotics projects${format('resetAll')} from!\r\n
-Use the ${format('brightMagentaText')}'help'${format('resetAll')} command to see all available commands\r
+${format.addEscapeCharacter('cyanText')}
+     *     ${format.newLine()}
+     |     ${format.newLine()}
+***********${format.newLine()}
+**       **${format.newLine()}
+**  ^ ^  **${format.newLine()}
+**   o   **${format.newLine()}
+**       **${format.newLine()}
+***********${format.newLine()}
+${format.addEscapeCharacter('resetAll')}
+Welcome to ${format.addEscapeCharacter('brightGreenText')}https://nodebotani.st!${format.addEscapeCharacter('resetAll')}${format.newLine()}
+This is my personal portfolio site, as well as a terminal you can${format.newLine()}
+${format.addEscapeCharacter('magentaText')}control some of my robotics projects${format.addEscapeCharacter('resetAll')} from!${format.newLine()}
+Use the ${format.addEscapeCharacter('brightMagentaText')}'help'${format.addEscapeCharacter('resetAll')} command to see all available commands${format.newLine()}
 `)
 
 term.prompt()
@@ -52,7 +52,7 @@ term._core.register(term.addDisposableListener('key', (key, ev) => {
   const printable = !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey;
 
   if (ev.keyCode === 13) {
-    term.write('\r\n')
+    term.write(`${format.newLine()}`)
     term.write(commands.runCommand(currentLine.split(' ')))
     currentLine =  ''
     currentLineLength = 0
