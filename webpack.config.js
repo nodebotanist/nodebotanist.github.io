@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 
 module.exports = {
   mode: "development",
@@ -11,5 +12,8 @@ module.exports = {
     // the target directory for all output files
     // must be an absolute path (use the Node.js path module)
     filename: "main.js", // string
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist')
   }
 }
