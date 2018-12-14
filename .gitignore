@@ -1,6 +1,5 @@
 .next
 build
-dist
 node_modules
 *.sublime-project
 *.sublime-workspace
