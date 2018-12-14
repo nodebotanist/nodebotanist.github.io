@@ -1,7 +1,7 @@
-const format = require('./formatting')
+const format = require('./format')
 const commands = require('./commands/map.js')
 
-function runCommand(args) {
+function run(args) {
   let command = args[0] 
   let arguments = []
   let commandList = Object.keys(commands)
@@ -20,5 +20,5 @@ function runCommand(args) {
 }
 
 module.exports = {
-  runCommand
+  run
 }

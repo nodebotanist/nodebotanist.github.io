@@ -1,4 +1,4 @@
-const format = require('../formatting')
+const format = require('../format')
 
 let helpCommand = (...args) => {
   // TODO: Add help for each command if command is passed
