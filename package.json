@@ -20,7 +20,7 @@
   "dependencies": {
     "webpack": "^4.27.1",
     "xterm": "^3.9.1",
-    "xterm-browser": "^0.2.1",
+    "xterm-browser": "^0.2.2",
     "xterm-webfont": "^1.1.1"
   },
   "devDependencies": {
