@@ -2,7 +2,6 @@ const format = require('../format')
 
 let run = (args) => {
   const commands = require('./map') 
-  console.log(commands)
   let listOfCommands = args._.slice(1, args._.length - 1)
   let helpCommand = ''
   
