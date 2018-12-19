@@ -1,13 +1,12 @@
 const format = require('../format')
 
-
-let run = (...args) => {
+let run = (args) => {
   const commands = require('./map') 
   console.log(commands)
-  let listOfCommands = args[args.length-1]
+  let listOfCommands = args._.slice(1, args._.length - 1)
   let helpCommand = ''
   
-  if(args.length > 1) {
+  if(args._.length > 1) {
     helpCommand = args[0]
   }
 

@@ -5,6 +5,8 @@ const BrowserTerminal = require('xterm-browser').Terminal
 
 const theme = require('./theme')
 
+const helpCommand = require('./commands/help')
+
 let currentLine = ''
 let currentLineLength = 0
 
@@ -34,4 +36,8 @@ term.prompt()
 term._core.register(term.addDisposableListener('paste', (data, ev) => {
   term.write(data)
 }))
+
+terminal.dispatcher.on('help', (args) => {
+  terminal.terminal.write(helpCommand.run(args))
+});
 
