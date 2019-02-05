@@ -6,6 +6,7 @@ const BrowserTerminal = require('xterm-browser').Terminal
 const theme = require('./theme')
 
 const helpCommand = require('./commands/help')
+const whoAreTheyCommand = require('./commands/whoarethey')
 
 let currentLine = ''
 let currentLineLength = 0
@@ -40,4 +41,8 @@ term._core.register(term.addDisposableListener('paste', (data, ev) => {
 terminal.dispatcher.on('help', (args) => {
   terminal.terminal.write(helpCommand.run(args))
 });
+
+terminal.dispatcher.on('whoarethey', (args) => {
+  terminal.terminal.write(whoAreTheyCommand.run())
+})
 
