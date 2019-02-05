@@ -1,8 +1,9 @@
 const format = require('../format')
 
 let run = (args) => {
-  const commands = require('./map') 
-  let listOfCommands = args._.slice(1, args._.length - 1)
+  const commands = require('./map')
+  let listOfCommands = Object.keys(commands)
+  console.log('test', listOfCommands)
   let helpCommand = ''
   
   if(args._.length > 1) {
