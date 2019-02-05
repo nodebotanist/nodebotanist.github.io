@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
+    "@octokit/rest": "^16.15.0",
     "webpack": "^4.27.1",
     "xterm": "^3.9.1",
     "xterm-browser": "^0.2.2",
@@ -25,6 +26,6 @@
   },
   "devDependencies": {
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.14"
   }
 }

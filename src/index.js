@@ -7,6 +7,7 @@ const theme = require('./theme')
 
 const helpCommand = require('./commands/help')
 const whoAreTheyCommand = require('./commands/whoarethey')
+const githubActivityCommand = require('./commands/githubActivity')
 
 let currentLine = ''
 let currentLineLength = 0
@@ -16,7 +17,9 @@ Terminal.applyAddon(WebfontLoader)
 
 let terminalOptions = {
   theme,
-  fontFamily: "Share Tech Mono"
+  fontFamily: "Fira Mono",
+  fontWeight: 400,
+  cols: 120
 }
 
 console.log(BrowserTerminal)
@@ -46,3 +49,6 @@ terminal.dispatcher.on('whoarethey', (args) => {
   terminal.terminal.write(whoAreTheyCommand.run())
 })
 
+terminal.dispatcher.on('githubActivity', async function() {
+  terminal.terminal.write(await githubActivityCommand.run())
+})
