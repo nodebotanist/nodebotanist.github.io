@@ -3,7 +3,6 @@ const format = require('../format')
 let run = (args) => {
   const commands = require('./map')
   let listOfCommands = Object.keys(commands)
-  console.log('test', listOfCommands)
   let helpCommand = ''
   
   if(args._.length > 1) {
@@ -17,7 +16,7 @@ let run = (args) => {
       return `${format.addEscapeCharacter('blueText')}Command ${helpCommand} not found!${format.addEscapeCharacter('resetAll')}`
     }
   } else {
-    return `${format.newLine()}The available commands are:${format.newLine()}${listOfCommands.map(command => `\b\t${command}${format.newLine()}`).join('')}`
+    return `${format.newLine()}The available commands are:${format.newLine()}${listOfCommands.map(command => `\b\t${command}\t${commands[command].helpText}${format.newLine()}`).join('')}`
   }
 }   
 
