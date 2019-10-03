@@ -20,7 +20,8 @@
   "dependencies": {
     "@octokit/rest": "^16.15.0",
     "webpack": "^4.27.1",
-    "xterm": "^3.9.1",
+    "xterm": "^4.0.2",
+    "xterm-addon-fit": "^0.2.1",
     "xterm-browser": "^0.3.3",
     "xterm-webfont": "^1.1.1"
   },
