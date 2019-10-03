@@ -11,7 +11,7 @@ module.exports = {
       page: 1
     })
     console.log(result)
-    return `${format.newLine()}Recent GitHub Activity for nodebotanist${format.newLine()}${result.data.map(action => `${action.created_at}: ${action.type}`).join(format.newLine())}`
+    return `${format.newLine()}Recent GitHub Activity for nodebotanist${format.newLine()}${result.data.map(action => `${action.created_at}: ${action.type} on ${action.repo.name}`).join(format.newLine())}`
   },
   helpText: `shows latest GitHub Activity`
 }

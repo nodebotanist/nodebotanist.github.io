@@ -25,8 +25,6 @@ let terminalOptions = {
 
 let term = new Terminal(terminalOptions)
 let fitAddon = new fit()
-// term.loadAddon(WebfontLoader)
-
 
 let terminal = new BrowserTerminal(term)
 
@@ -36,7 +34,7 @@ terminal.loadAddon(fitAddon)
 fitAddon.fit()
 
 // Intro time!
-terminal.write(`${terminal.format.newLine()}${terminal.format.text('cyan')}     *     ${terminal.format.newLine()}     |     ${terminal.format.newLine()}***********${terminal.format.newLine()}**       **${terminal.format.newLine()}**  ^ ^  **${terminal.format.newLine()}**   o   **${terminal.format.newLine()}**       **${terminal.format.newLine()}***********${terminal.format.newLine()}${terminal.format.reset('all')}Welcome to 🤖  ${terminal.format.brightText('green')}https://nodebotani.st!${terminal.format.reset('all')}${terminal.format.newLine()}This is my personal portfolio site, as well as a terminal you can${terminal.format.newLine()}${terminal.format.text('magenta')}control some of my robotics projects${terminal.format.reset('all')} from!${terminal.format.newLine()}Use the ${terminal.format.brightText('magenta')}'help'${terminal.format.reset('all')} command to see all available commands ${terminal.format.newLine()} `)
+terminal.write(`🤖${terminal.format.newLine()}${terminal.format.reset('all')}Welcome to ${terminal.format.brightText('green')}https://nodebotani.st!${terminal.format.reset('all')}${terminal.format.newLine()}This is my personal portfolio site, as well as a terminal you can ${terminal.format.text('magenta')}interact with${terminal.format.reset('all')}${terminal.format.newLine()}Use the ${terminal.format.brightText('magenta')}'help'${terminal.format.reset('all')} command to see all available commands `)
 
 terminal.prompt()
 terminal.setup()

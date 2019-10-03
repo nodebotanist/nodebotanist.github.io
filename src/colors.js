@@ -16,6 +16,6 @@ module.exports = {
   yellow: '#ee8826',
   brightyellow: '#f3ca20',
   background: '#333333',
-  foreground: '#fae2cc',
+  foreground: '#333333',
   cursor: '#f3c947'
 }
