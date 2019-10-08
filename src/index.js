@@ -12,7 +12,7 @@ const githubActivityCommand = require('./commands/githubActivity')
 let currentLine = ''
 let currentLineLength = 0
 
-
+console.log(theme)
 let terminalOptions = {
   theme,
   fontFamily: "Fira Mono",

@@ -1,6 +1,6 @@
 module.exports = {
-  black: '#040303',
-  brightBlack: '#6090cb',
+  black: '#000',
+  brightBlack: '#000',
   white: '#fae2cc',
   brightWhite: '#f8f7fc',
   blue: '#0e62d1',
@@ -15,7 +15,7 @@ module.exports = {
   brightRed: '#ff776d',
   yellow: '#ee8826',
   brightyellow: '#f3ca20',
-  background: '#333333',
-  foreground: '#333333',
+  background: '#000',
+  foreground: '#000',
   cursor: '#f3c947'
 }
