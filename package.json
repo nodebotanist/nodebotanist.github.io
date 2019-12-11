@@ -1,32 +1,31 @@
 {
-  "name": "nodebotanist.github.io",
-  "version": "2.0.0",
-  "description": "",
+  "name": "gatsby-starter-hello-world",
   "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
-    "build": "npx webpack && cp index.html ./dist",
-    "start": "npx webpack-dev-server"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.18.8",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodebotanist/nodebotanist.github.io.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nodebotanist/nodebotanist.github.io/issues"
-  },
-  "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
-  "dependencies": {
-    "@octokit/rest": "^16.15.0",
-    "webpack": "^4.27.1",
-    "xterm": "^4.0.2",
-    "xterm-addon-fit": "^0.2.1",
-    "xterm-browser": "^0.3.3",
-    "xterm-webfont": "^1.1.1"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
