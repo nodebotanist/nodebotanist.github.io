@@ -1,0 +1,27 @@
+{
+  "name": "nodebotanist.github.io",
+  "version": "1.0.0",
+  "description": "This is my personal site-- I am hacking up a fake terminal to use with [xterm.js](https://xtermjs.org). I will be splitting out the functionality into its own xterm plugin as a side project.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodebotanist/nodebotanist.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodebotanist/nodebotanist.github.io/issues"
+  },
+  "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
+  "dependencies": {
+    "next": "^9.2.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
