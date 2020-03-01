@@ -1,0 +1,8 @@
+.icon {
+  min-width: 2.5rem;
+  text-decoration: none;
+}
+
+.icon:hover {
+  text-decoration: none;
+}
