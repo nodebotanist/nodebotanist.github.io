@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodebotanist/nodebotanist.github.io.git"
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
-    "next": "^9.2.2",
+    "next": "^9.3.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   }
