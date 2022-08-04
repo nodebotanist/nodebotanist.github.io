@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
   "dependencies": {
     "gatsby": "^4.20.0",
+    "kutty": "^0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
