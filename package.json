@@ -1,0 +1,24 @@
+{
+  "name": "nodebotanist.github.io",
+  "version": "3.0.0",
+  "description": "Kassian Wren's Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodebotanist/nodebotanist.github.io.git"
+  },
+  "author": "nodebotanist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodebotanist/nodebotanist.github.io/issues"
+  },
+  "homepage": "https://github.com/nodebotanist/nodebotanist.github.io#readme",
+  "dependencies": {
+    "gatsby": "^4.20.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
