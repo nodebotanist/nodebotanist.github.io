@@ -1,12 +1,10 @@
 import React from "react"
-import {
-  Heading
-} from '@chakra-ui/react'
+import Layout from '../components/layout'
 
 const Page = ({serverData}) => { 
-    return <main>
-        <Heading as='h1' size='2xl'>Hello from the server!</Heading>
-    </main> }
+    return <Layout pageTitle="Homepage">
+        <p>Hello from the server!</p>
+    </Layout> }
 export default Page
 
 export async function getServerData() {
