@@ -17,3 +17,4 @@ highlight_theme = "boron"
 
 [extra]
 # Put all your custom variables here
+page_titles = "combined"
