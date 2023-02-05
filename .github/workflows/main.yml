@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3.0.0
+        with:
+          submodules: true
       - name: build_and_deploy
         uses: nodebotanist/zola-deploy-action@master
         env:
