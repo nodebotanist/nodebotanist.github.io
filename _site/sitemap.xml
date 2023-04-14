@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nodebotani.st/about/</loc>
+    <lastmod>2023-04-14</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nodebotani.st/contact/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-14</lastmod>
   </url>
   
   <url>
     <loc>https://nodebotani.st/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-14</lastmod>
   </url>
   
   <url>
     <loc>https://nodebotani.st/page-list/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-14</lastmod>
   </url>
   
   <url>
     <loc>https://nodebotani.st/tags/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-14</lastmod>
   </url>
   
   <url>
-    <loc>https://nodebotani.st/about/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <loc>https://nodebotani.st/#about/</loc>
+    <lastmod>2023-04-14</lastmod>
   </url>
 </urlset>
