@@ -2,5 +2,6 @@
     "Home" : "fa-home",
     "About" : "fa-star",
     "Experience": "fa-briefcase",
-    "Contact": "fa-at"
+    "Contact": "fa-at",
+    "Examples": "fa-film"
 }
